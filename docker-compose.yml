@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  app:
+    container_name: detox
+    image: node:17-alpine3.12
+    working_dir: /app
+    volumes:
+      - ./:/app
+    command: sh -c "sleep 1d"
+
